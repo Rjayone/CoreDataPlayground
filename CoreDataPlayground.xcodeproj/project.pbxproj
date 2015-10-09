@@ -14,6 +14,10 @@
 		30F793011BC3CE11004385D3 /* CoreDataPlayground.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 30F792FF1BC3CE11004385D3 /* CoreDataPlayground.xcdatamodeld */; };
 		30F793031BC3CE11004385D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30F793021BC3CE11004385D3 /* Assets.xcassets */; };
 		30F793061BC3CE11004385D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30F793041BC3CE11004385D3 /* LaunchScreen.storyboard */; };
+		30F793101BC3D566004385D3 /* ObjectContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 30F7930F1BC3D566004385D3 /* ObjectContext.m */; settings = {ASSET_TAGS = (); }; };
+		30F793161BC41616004385D3 /* Student+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 30F793131BC41616004385D3 /* Student+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
+		30F793171BC41616004385D3 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 30F793151BC41616004385D3 /* Student.m */; settings = {ASSET_TAGS = (); }; };
+		30F83E661BC664D600DAF8C6 /* CoreDataServiceLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 30F83E651BC664D600DAF8C6 /* CoreDataServiceLayer.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,14 @@
 		30F793021BC3CE11004385D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30F793051BC3CE11004385D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		30F793071BC3CE11004385D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30F7930E1BC3D566004385D3 /* ObjectContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectContext.h; sourceTree = "<group>"; };
+		30F7930F1BC3D566004385D3 /* ObjectContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectContext.m; sourceTree = "<group>"; };
+		30F793121BC41616004385D3 /* Student+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Student+CoreDataProperties.h"; sourceTree = "<group>"; };
+		30F793131BC41616004385D3 /* Student+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Student+CoreDataProperties.m"; sourceTree = "<group>"; };
+		30F793141BC41616004385D3 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		30F793151BC41616004385D3 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		30F83E641BC664D600DAF8C6 /* CoreDataServiceLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataServiceLayer.h; sourceTree = "<group>"; };
+		30F83E651BC664D600DAF8C6 /* CoreDataServiceLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataServiceLayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +72,8 @@
 		30F792F21BC3CE11004385D3 /* CoreDataPlayground */ = {
 			isa = PBXGroup;
 			children = (
+				30F793111BC41605004385D3 /* Models */,
+				30F7930D1BC3D51B004385D3 /* Categories */,
 				30F792F61BC3CE11004385D3 /* AppDelegate.h */,
 				30F792F71BC3CE11004385D3 /* AppDelegate.m */,
 				30F792F91BC3CE11004385D3 /* ViewController.h */,
@@ -70,6 +84,8 @@
 				30F793071BC3CE11004385D3 /* Info.plist */,
 				30F792FF1BC3CE11004385D3 /* CoreDataPlayground.xcdatamodeld */,
 				30F792F31BC3CE11004385D3 /* Supporting Files */,
+				30F83E641BC664D600DAF8C6 /* CoreDataServiceLayer.h */,
+				30F83E651BC664D600DAF8C6 /* CoreDataServiceLayer.m */,
 			);
 			path = CoreDataPlayground;
 			sourceTree = "<group>";
@@ -80,6 +96,26 @@
 				30F792F41BC3CE11004385D3 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		30F7930D1BC3D51B004385D3 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				30F7930E1BC3D566004385D3 /* ObjectContext.h */,
+				30F7930F1BC3D566004385D3 /* ObjectContext.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		30F793111BC41605004385D3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				30F793121BC41616004385D3 /* Student+CoreDataProperties.h */,
+				30F793131BC41616004385D3 /* Student+CoreDataProperties.m */,
+				30F793141BC41616004385D3 /* Student.h */,
+				30F793151BC41616004385D3 /* Student.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,8 +189,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				30F792FB1BC3CE11004385D3 /* ViewController.m in Sources */,
+				30F793161BC41616004385D3 /* Student+CoreDataProperties.m in Sources */,
+				30F83E661BC664D600DAF8C6 /* CoreDataServiceLayer.m in Sources */,
 				30F792F81BC3CE11004385D3 /* AppDelegate.m in Sources */,
 				30F792F51BC3CE11004385D3 /* main.m in Sources */,
+				30F793171BC41616004385D3 /* Student.m in Sources */,
+				30F793101BC3D566004385D3 /* ObjectContext.m in Sources */,
 				30F793011BC3CE11004385D3 /* CoreDataPlayground.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,6 +342,7 @@
 				30F7930C1BC3CE11004385D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
